@@ -11,7 +11,7 @@ public class TripBooking{
     private String fromLocation;
     private String toLocation;
 
-    private  int distancaInKm;
+    private  int distanceInKm;
 
     private TripStatus status;
 
@@ -50,11 +50,11 @@ public class TripBooking{
 	}
 
 	public int getDistancaInKm() {
-		return distancaInKm;
+		return distanceInKm;
 	}
 
 	public void setDistancaInKm(int distancaInKm) {
-		this.distancaInKm = distancaInKm;
+		this.distanceInKm = distancaInKm;
 	}
 
 	public TripStatus getStatus() {
@@ -95,7 +95,7 @@ public class TripBooking{
 		this.tripBookingId = tripBookingId;
 		this.fromLocation = fromLocation;
 		this.toLocation = toLocation;
-		this.distancaInKm = distancaInKm;
+		this.distanceInKm = distancaInKm;
 		this.status = status;
 		this.bill = bill;
 	}
@@ -111,7 +111,7 @@ public class TripBooking{
 		this.tripBookingId = tripBookingId;
 		this.fromLocation = fromLocation;
 		this.toLocation = toLocation;
-		this.distancaInKm = distancaInKm;
+		this.distanceInKm = distancaInKm;
 		this.status = status;
 		this.bill = bill;
 		this.customer = customer;
