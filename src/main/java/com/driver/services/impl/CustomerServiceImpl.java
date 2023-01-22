@@ -71,7 +71,7 @@ public class CustomerServiceImpl implements CustomerService {
 		}
 		
 		if( availableFlag == false ) {
-			throw new Exception("No value present");
+			throw new Exception("No cab available!");
 		}
 		
 		trip.setDriver(tripDriver);
@@ -88,6 +88,7 @@ public class CustomerServiceImpl implements CustomerService {
 		Optional<TripBooking> t = this.tripBookingRepository2.findById(tripId);
 		TripBooking cancelTrip = t.get();
 		cancelTrip.setStatus( TripStatus.CANCELED );
+		cancelTrip.setBill(0);
 		Driver canceled = cancelTrip.getDriver();
 		Cab canceledCab = canceled.getCab();
 		canceledCab.setAvailable(true);
