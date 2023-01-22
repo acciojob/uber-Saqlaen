@@ -50,7 +50,7 @@ public class CustomerServiceImpl implements CustomerService {
 		TripBooking trip = new TripBooking();
 		trip.setFromLocation(fromLocation);
 		trip.setToLocation(toLocation);
-		trip.setDistancaInKm( distanceInKm );
+		trip.setDistanceInKm( distanceInKm );
 		
 		Optional<Customer> c = this.customerRepository2.findById(customerId);
 		Customer customer = c.get();

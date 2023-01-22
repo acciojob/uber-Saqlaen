@@ -49,11 +49,11 @@ public class TripBooking{
 		this.toLocation = toLocation;
 	}
 
-	public int getDistancaInKm() {
+	public int getDistanceInKm() {
 		return distanceInKm;
 	}
 
-	public void setDistancaInKm(int distancaInKm) {
+	public void setDistanceInKm(int distancaInKm) {
 		this.distanceInKm = distancaInKm;
 	}
 
