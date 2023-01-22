@@ -63,7 +63,7 @@ public class CustomerServiceImpl implements CustomerService {
 		boolean availableFlag = false;
 		for( Driver driver : drivers ) {
 			Cab driverCab = driver.getCab();
-			if( driverCab.isAvailable() ) {
+			if( driverCab.getAvailable() ) {
 				tripDriver = driver;
 				availableFlag = true;
 				driverCab.setAvailable(false);
