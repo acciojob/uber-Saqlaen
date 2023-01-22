@@ -67,6 +67,8 @@ public class CustomerServiceImpl implements CustomerService {
 				tripDriver = driver;
 				availableFlag = true;
 				driverCab.setAvailable(false);
+				
+				break;
 			}
 		}
 		
@@ -76,6 +78,8 @@ public class CustomerServiceImpl implements CustomerService {
 		
 		trip.setDriver(tripDriver);
 		trip.setStatus( TripStatus.CONFIRMED);
+		
+		this.driverRepository2.save( tripDriver );
 		
 		this.tripBookingRepository2.save(trip);
 		return trip;
